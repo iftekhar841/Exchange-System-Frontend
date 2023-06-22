@@ -27,7 +27,17 @@ img {
 span {
     color: blue;
     font-weight: bold;
-    text-decoration: underline;
+    position: relative;
+}
+
+span:after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
 }
 
 .search-box {
@@ -37,4 +47,27 @@ span {
     border-radius: 33px;
     margin-left: 35%;
     margin-top: 3%;
+    position: relative;
 } 
+
+.search-box .MuiInputBase-root{
+    width: calc(100% + 200px);
+    left: -200px;
+    /* position: relative; */
+}
+
+.search-box  .icon-button{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.plac-icon{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.search-box .MuiInputBase-root .MuiInputBase-input:focus {
+    width: 16ch;
+}

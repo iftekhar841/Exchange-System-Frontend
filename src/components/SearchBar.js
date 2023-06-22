@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
+import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -52,6 +53,9 @@ const SearchBar = () => {
   return (
     <>
       <div className='search-box'>
+        <div className='plac-icon'>
+        <CorporateFareIcon />
+        </div>
         <Box sx={{ flexGrow: 1 }}>
           <Toolbar>
             <IconButton
@@ -60,7 +64,7 @@ const SearchBar = () => {
               color="inherit"
               aria-label="open drawer"
               sx={{ mr: 2 }}
-            >
+              >
             </IconButton>
             <Typography
               variant="h6"
@@ -70,11 +74,13 @@ const SearchBar = () => {
             >
             </Typography>
             <Search>
+              <div className='icon-button'>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
+              </div>
               <StyledInputBase
-                placeholder="Search…"
+                placeholder="Find an exchanges"
                 inputProps={{ 'aria-label': 'search' }}
               />
             </Search>
