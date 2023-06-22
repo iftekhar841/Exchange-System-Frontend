@@ -1,0 +1,22 @@
+.table-rate {
+    position: relative;
+    margin-top: -32px;
+    margin-left: 90px;
+    font-weight: bold;
+}
+
+.table-volumn {
+    font-weight: bold;
+}
+
+.table-number {
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: -24px;
+    font-weight: bold;
+    font-size: small;
+}
+
+img {
+    margin-left: 40px;
+}
