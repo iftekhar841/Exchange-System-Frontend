@@ -20,3 +20,21 @@
 img {
     margin-left: 40px;
 }
+
+.header-content {
+    text-align: center;
+} 
+span {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.search-box {
+    width: 31%;
+    margin-bottom: 6%;
+    border: 1px solid #b3d1ba;
+    border-radius: 33px;
+    margin-left: 35%;
+    margin-top: 3%;
+} 

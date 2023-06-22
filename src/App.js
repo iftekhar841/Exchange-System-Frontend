@@ -36,6 +36,12 @@ const App = () => {
   return (
     <>
       <div>
+        <div className='header-content'>
+         <h1> Top crypto exchanges</h1>
+         <p>Compare all 190 top crypto exchange. The list is ranked by trading volume</p>
+         <span>Exchanges</span>
+            <hr /> 
+         </div>
         <SearchBar />
         <ExchangeTable exchangeRate={exchangeRate} exchangeIcon={exchangeIcon} />
         <Pagination />
